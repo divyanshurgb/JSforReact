@@ -1,4 +1,5 @@
 // // ## 1. var let const
+
 // var x 
 // // 1. hoisting is done in var keyword, not in let and const
 // console.log(x)
@@ -30,6 +31,7 @@
 // console.log(lastprice)
 
 // // ## 2. Template Literals
+
 // const name = "ramesh" 
 // const age = 22
 // const weight = 60
@@ -41,6 +43,7 @@
 // console.log(greet);
 
 // // ## 3. Conditionals, Truthy, falsy
+
 // const age = 5
 // const username = ""
 // // "", false, undefined, null, 0
@@ -52,7 +55,8 @@
 // //     console.log("You are noob")
 // // }
 
-// // #4 Ternary Operator
+// // ##4 Ternary Operator
+
 // const age = 3
 // let user = false
 
@@ -67,12 +71,20 @@
 
 // console.log(user)
 
-// // #5 Short Circuiting Operators
+// // ##5 Short Circuiting Operators
 
-const emailVerified = false
-const name = "mukesh"
-const username = (emailVerified && name)|| "User"
+// const emailVerified = true
+// const name = "mukesh"
+// const username = (emailVerified && name)|| "User"  // false || user => User , true || user => user
 
-console.log(username)
+// console.log(username)
 
+// // ##6 Object Destructuring
+
+const person = {
+    name: "ramesh",
+    age: 20
+}
+
+console.log(person["name"])
 
