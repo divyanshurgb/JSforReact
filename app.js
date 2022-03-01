@@ -1,78 +1,72 @@
-// // ## 1. var let const
-// var x 
-// // 1. hoisting is done in var keyword, not in let and const
-// console.log(x)
-// x = 30
-// var x = 60
-// let y = 50
-// y = 60 
-// // 2. redeclaration is not allowed
-// const z = 40 
-// console.log(x)
-// console.log(y)
-
-// for(var i = 0; i <= 3; i++) {
-//     console.log(i) 
-// } // Scoping issue in for loop because outside loop due to var i is also incremented
-
-// console.log(i)
-
-// const z = 30   
-// // can not be changed, use when var is not changed
-// console.log(z)
-
-// const is predictable
-// const price = 100
-// const lastprice = price - 50
-
-// // Code
-
-// console.log(lastprice)
-
-// // ## 2. Template Literals
-// const name = "ramesh" 
-// const age = 22
-// const weight = 60
-
-// // `` use backticks for Template literals
-
-// const greet = `after dieting, my weight is ${weight - 10}`
-
-// console.log(greet);
-
-// // ## 3. Conditionals, Truthy, falsy
-// const age = 5
-// const username = ""
-// // "", false, undefined, null, 0
-
-// if(!username) {
-//     console.log("user doesn't exist")
+// const fetchPost = async () => {
+//     try {
+//     const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+//     const result = await res.json
+//     console.log(result)
+// }   
+// catch(err) {
+//     console.log(err)
 // }
-// // else {
-// //     console.log("You are noob")
-// // }
-
-// // #4 Ternary Operator
-// const age = 3
-// let user = false
-
-// if(token) {
-//     user = true
-// }
-// else {
-//     user = false
 // }
 
-// const user = age >= 18 ? 'adult' : 'child'
+// Styling console.log //
+// function Print(text) {
+//     console.log(`%c ${text}`, 'color: orange')
+// }
 
-// console.log(user)
+class Bike {
+        constructor(color, mspeed) {
+            this.color = "red"
+            this.maxspeed = mspeed
+        }
 
-// // #5 Short Circuiting Operators
+        itro () {
+            Print(`Bike color is ${this.color} and max speed is ${this.maxspeed} airbag is ${this.airbag}`)
+        }
+}
 
-const emailVerified = false
-const name = "mukesh"
-const username = (emailVerified && name)|| "User"
+class Car extends Bike {
+    constructor(color, mspeed) {
+        super(color, mspeed)
+        this.airbag = airbag
+    }
+    
+}
 
-console.log(username)
+const bullet = new Bike("red", 120);
+const avenger = new Bike("black", 123);
 
+
+const maruti = new Car("white", 150, true);
+
+const i20 = new Car("yellow", 123, false);
+
+maruti.intro()
+Print(i20.airbag)
+Print(maruti.airbag)
+// Print(bullet.color);
+// const maruti = new Car()
+// bullet.itro()
+// avenger.itro()
+// Print('hello world !!')
+
+// console.log('%cI am ramesh and %cmystatus is coder', 'color: orange', 'background: green')
+
+// Class and Inheritance // // 
+
+// const bullet = {
+//     color: "red", 
+//     maxspeed: 110, 
+//     itro: () => {
+//         Print(`Bullet bike in ${this.color} and max speed ${this.maxspeed} kmph`)
+//     }
+// }
+
+// const avenger = {
+//     color: "black", 
+//     maxspeed: 120, 
+//     itro: () => {
+//         Print(`Avenger bike in ${this.color} and max speed ${this.maxspeed} kmph`)
+//     }
+// }
 
