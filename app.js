@@ -1,12 +1,20 @@
-// Destructuring // 
-// let fruit = {
-//     firstFruit: 'Orange',
-//     secondFruit: 'Banana'
-// }
+const fetchPost = async () => {
+    try {
+        async function fetchPost() {
+            const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+            const result = await res.json()
+            console.log(result)
+            // .then((res) => res.json())
+            // .then((result) => {
+            //     console.log(result)
+            // })
+            // .catch((err) => {
+            //     console.log(err)
+            // })
+            }            
+    } catch(err) {
+        console.log(err)
+    }
+}
 
-// // Normal destructuring
-// let {firstFruit, secondFruit} = fruit;
-// console.log(firstFruit);
 
-// // Destructuring with renaming
-// let {firstFruit: roundFruit, secondFruit: longFruit} = fruit;
