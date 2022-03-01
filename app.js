@@ -1,13 +1,18 @@
-const bioData = {
-        name : "vinod",
-        age : 26,
-        deg : 'MCS',
-        hobb: {
-            first: 'playing',
-            sec: 'youtube videos'
-        }
-    }
+// // Spread Operator
+// const user = {
+//     id: 1,
+//     username: "suresh",
+//     password: "dacefsdfgs",
+//     item: ""
+// }
 
-let {name: myname, age: ages, deg, hobb} = bioData;  // deg = 26, age = MCS
+// const cart = {
+//     ...user,
+//     item: 'shoes'
+// }
 
-console.log(`my name is ${myname}. My age is ${ages} and My highest qual. is ${deg}. I love making ${hobb.sec}`);
+// console.log(cart)
+
+// // 
+
+
